@@ -1,0 +1,38 @@
+.error-section {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 20rem;
+    height: 10rem;
+}
+
+.error-btn {
+    background-color: transparent;
+    color: black;
+    padding: 7px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.error-btn:hover {
+    cursor: pointer;
+}
+
+.link-error {
+    text-decoration: none;
+}
+
+.btn-div {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.smiley-error {
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    transform: rotate(-20deg); 
+    
+   
+    
+}

@@ -1,0 +1,14 @@
+img {
+	width: 10%;
+}
+
+.Navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: beige;
+}
+
+link{
+    margin-right: 20%;
+}

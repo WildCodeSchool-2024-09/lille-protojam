@@ -60,3 +60,8 @@ body {
 .login-form button:hover {
 	background-color: #588ed8;
 }
+
+.error-message {
+	color: red;
+	margin: 10px;
+}
