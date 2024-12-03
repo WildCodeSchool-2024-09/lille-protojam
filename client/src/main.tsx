@@ -7,12 +7,13 @@ import { createRoot } from "react-dom/client";
 // Import the main app component
 import App from "./App";
 import UsersProfile from "./pages/UsersProfile/UsersProfile";
-import Mood from "./components/mood/Mood";
+import Mood from "./components/Mood/Mood";
 import Login from "./components/Login/Login";
-import Home from "./pages/Home";
 import Journal from "./pages/Journal";
 import DailyAct from "./pages/DailyAct/DailyAct";
 import Error from "./pages/Error/Error";
+import Home from "./pages/Home/Home";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -84,7 +85,6 @@ const router = createBrowserRouter([
   },
 ]);
 
-
 /* ************************************************************************* */
 
 // Find the root element in the HTML document
@@ -96,7 +96,7 @@ if (rootElement == null) {
 // Render the app inside the root element
 createRoot(rootElement).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>
 );
 
