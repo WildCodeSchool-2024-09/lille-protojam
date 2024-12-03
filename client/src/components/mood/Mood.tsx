@@ -2,32 +2,27 @@ import { useState } from "react";
 import "./Mood.css";
 
 function Mood() {
-  const [happyCount, setHappyCount] = useState(0);
-  const [neutralCount, setNeutralCount] = useState(0);
-  const [sadCount, setSadCount] = useState(0);
+  const [moodCount, setMoodcount] = useState(0);
 
   const handleClickHappy = () => {
-    setHappyCount(happyCount - 1);
+    setMoodcount(moodCount - 1);
   };
 
   const handleclickNeutral = () => {
-    setNeutralCount(neutralCount + 1);
+    if (moodCount <= 0) {
+      setMoodcount(moodCount + 1);
+    }
+    setMoodcount(moodCount - 1);
   };
 
   const handleClickSad = () => {
-    setSadCount(sadCount + 1);
+    setMoodcount(moodCount + 1);
   };
 
   // jauge :
   // Entre -50 et 50
   // Jauge = total count = happy + sad
   // total <= 0 ? total + neutre : total - neutre
-  let totalCount = happyCount + sadCount;
-  if (totalCount <= 0) {
-    totalCount = totalCount + neutralCount;
-  } else if (totalCount >= 0) {
-    totalCount = totalCount - neutralCount;
-  }
 
   return (
     <>
@@ -47,7 +42,6 @@ function Mood() {
                 </div>
                 <div className=" mouth mouth-happy" />
               </div>
-              <div className="compteur">happy score : {happyCount}</div>
             </div>
           </button>
           {/*  */}
@@ -64,7 +58,6 @@ function Mood() {
                 </div>
                 <div className="mouth mouth-neutral" />
               </div>
-              <div className="compteur">neutral score : {neutralCount}</div>
             </div>
           </button>
           {/*  */}
@@ -81,13 +74,12 @@ function Mood() {
                 </div>
                 <div className="mouth mouth-sad" />
               </div>
-              <div className="compteur">sad score : {sadCount}</div>
             </div>
           </button>
         </div>
         <div className="mood-gauge">
           <div className="total-count">
-            <h3>Total : {totalCount}</h3>
+            <h3>Total : {moodCount}</h3>
           </div>
           <div className="left-side-pos" />
           <div className="center-pos" />
