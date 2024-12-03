@@ -1,12 +1,12 @@
 import "./App.css";
-import UsersProfile from "./pages/UsersProfile/UsersProfile";
+import Login from "./components/Login/Login";
 
 function App() {
-  return (
-    <>
-      <UsersProfile />
-    </>
-  );
+	return (
+		<>
+			<Login />
+		</>
+	);
 }
 
 export default App;
