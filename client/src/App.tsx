@@ -1,14 +1,12 @@
 import "./App.css";
-import Journal from "./pages/Journal";
-import Login from "./components/Login/Login";
-
-
+import { Outlet } from "react-router-dom";
+import { MoodProvider } from "./services/MoodContext";
 function App() {
-
   return (
     <>
-    < Journal />
-      <Login />
+      <MoodProvider>
+        <Outlet />
+      </MoodProvider>
     </>
   );
 }

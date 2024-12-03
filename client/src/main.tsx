@@ -11,6 +11,8 @@ import UsersProfile from "./pages/UsersProfile/UsersProfile";
 import Mood from "./components/mood/Mood";
 import Login from "./components/Login/Login";
 import Home from "./pages/Home";
+import DailyAct from "./pages/DailyAct/DailyAct";
+import Journal from "./pages/Journal";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -24,52 +26,57 @@ import Home from "./pages/Home";
 // You can add more routes as you build out your app!
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: (
-      <>
-        <Home />
-      </>
-    ),
-  },
-  {
-    path: "/login",
-    element: (
-      <>
-        <Login />
-      </>
-    ),
-  },
-  {
-    path: "/profile",
-    element: (
-      <>
-        <UsersProfile />
-      </>
-    ),
-  },
-  {
-    path: "/profile-actions",
-    element: (
-      <>
-        <DailyAct />
-      </>
-    ),
-  },
-  {
-    path: "/profile-journal", //
-    element: (
-      <>
-        <Journal />
-      </>
-    ),
-  },
-  {
-    path: "/profile-mood",
-    element: (
-      <>
-        <Mood />
-      </>
-    ),
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: (
+          <>
+            <Home />
+          </>
+        ),
+      },
+      {
+        path: "/login",
+        element: (
+          <>
+            <Login />
+          </>
+        ),
+      },
+      {
+        path: "/profile",
+        element: (
+          <>
+            <UsersProfile />
+          </>
+        ),
+      },
+      {
+        path: "/profile-actions",
+        element: (
+          <>
+            <DailyAct />
+          </>
+        ),
+      },
+      {
+        path: "/profile-journal", //
+        element: (
+          <>
+            <Journal />
+          </>
+        ),
+      },
+      {
+        path: "/profile-mood",
+        element: (
+          <>
+            <Mood />
+          </>
+        ),
+      },
+    ],
   },
 ]);
 

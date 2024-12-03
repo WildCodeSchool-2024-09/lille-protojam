@@ -1,22 +1,29 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./Mood.css";
+import { MoodContext } from "../../services/MoodContext";
 
 function Mood() {
   const [moodCount, setMoodcount] = useState(0);
+  const { mood, setMood } = useContext(MoodContext);
+
+  console.log("mooddd", mood);
 
   const handleClickHappy = () => {
     setMoodcount(moodCount - 1);
+    setMood("happy");
   };
 
   const handleclickNeutral = () => {
     if (moodCount <= 0) {
       setMoodcount(moodCount + 1);
+      setMood("neutral");
     }
     setMoodcount(moodCount - 1);
   };
 
   const handleClickSad = () => {
     setMoodcount(moodCount + 1);
+    setMood("sad");
   };
 
   // jauge :
@@ -26,6 +33,7 @@ function Mood() {
 
   return (
     <>
+      <p>{mood}</p>
       <div className="mood-container">
         <div className="smiley-container">
           {/*  */}
