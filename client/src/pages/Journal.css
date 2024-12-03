@@ -1,22 +1,69 @@
 #root {
-	display: flex;
-    flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .board-container {
-    margin: 1rem 0;
-    
-	width: 95%;
-	height: 95%;
-	background-image: url("../assets/images/background.jpg");
-	border: 15px ridge #c9592a;
-	border-radius: 10px;
-    box-shadow: 9px 9px 15px 5px #000000;
+  margin: 1rem 0;
+  width: 95%;
+  height: 95%;
+  background-image: url("../assets/images/background.jpg");
+  border: 15px ridge #c9592a;
+  border-radius: 10px;
+  box-shadow: 9px 9px 15px 5px #000000;
 }
 
 .journal-title {
-    margin: 1rem;
+  margin: 1rem;
 }
 
+.input-container {
+  display: flex;
+  gap: 10px;
+  background-color: #ffeb3b; /* Couleur post-it */
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 150px; /* Largeur fixe pour les post-its */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 0.5rem;
+  height: 150px;
+  flex-direction: column;
+  box-shadow: 1px 1px rgb(195, 195, 68), 2px 2px rgb(231, 231, 104),
+    3px 3px rgb(219, 219, 92), 4px 4px rgb(207, 207, 80),
+    5px 5px rgb(195, 195, 68), 6px 6px rgb(183, 183, 56),
+    7px 7px rgb(171, 171, 44), 8px 8px rgb(159, 159, 32),
+    9px 9px rgb(147, 147, 20), 10px 10px rgb(135, 135, 8);
+}
+
+.post-it-board {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+  margin-left: 2rem;
+}
+
+.post-it {
+  background-color: #ffeb3b; /* Couleur post-it */
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  height: 250px;
+  width: 250px; /* Largeur fixe pour les post-its */
+  box-shadow: 1px 16px 15px -6px rgba(0, 0, 0, 0.74);
+}
+
+.icon-postit {
+  background-color: #ffeb3b;
+}
+.input-postit {
+  background-color: #ffeb3b;
+  font-size: 0.7rem;
+  height: 85%;
+  border: none;
+}
