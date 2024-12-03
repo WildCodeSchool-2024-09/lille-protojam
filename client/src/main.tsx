@@ -1,12 +1,13 @@
 // Import necessary modules from React and React Router
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 /* ************************************************************************* */
 
 // Import the main app component
 import App from "./App";
+import UsersProfile from "./pages/UsersProfile/UsersProfile";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -20,10 +21,53 @@ import App from "./App";
 // You can add more routes as you build out your app!
 const router = createBrowserRouter([
   {
-    path: "/", // The root path
-    element: <App />, // Renders the App component for the home page
+    path: "/",
+    element: (
+      <>
+          <Home />
+      </>
+    ),
   },
-  // Try adding a new route! For example, "/about" with an About component
+  {
+    path: "/login",
+    element: (
+      <>
+          <Login />
+      </>
+    ),
+  },
+  {
+    path: "/profile",
+    element: (
+      <>
+          <UsersProfile />
+      </>
+    ),
+  },
+  {
+    path: "/profile-actions",
+    element: (
+      <>
+          <DailyAct />
+      </>
+    ),
+  },
+  {
+    path: "/profile-journal", // 
+    element: (
+      <>
+          <Journal />
+      </>
+    ),
+  },
+  {
+    path: "/profile-mood",
+    element: (
+      <>
+          <MoodMeter />
+      </>
+    ),
+  },
 ]);
 
 /* ************************************************************************* */
@@ -38,6 +82,8 @@ if (rootElement == null) {
 createRoot(rootElement).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <App />
+ 
   </StrictMode>
 );
 
