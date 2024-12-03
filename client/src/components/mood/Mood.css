@@ -83,3 +83,9 @@
   border: none;
   cursor: pointer;
 }
+
+.mood-gauge {
+  text-align: center;
+  background-color: violet;
+  border: solid red 5px;
+}

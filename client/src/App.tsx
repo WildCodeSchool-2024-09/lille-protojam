@@ -1,12 +1,7 @@
 import "./App.css";
-import Mood from "./components/mood/Mood";
 
 function App() {
-  return (
-    <>
-      <Mood />
-    </>
-  );
+  return <></>;
 }
 
 export default App;
