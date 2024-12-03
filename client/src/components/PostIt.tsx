@@ -1,45 +1,25 @@
-import { useState } from "react";
+import { useMemo } from "react";
 
-function PostIt() {
-	const [postIts, setPostIts] = useState([]);
-	const [inputValue, setInputValue] = useState("");
-
-	const handleAddPostIt = () => {
-		if (inputValue.trim() !== "") {
-			setPostIts([...postIts, inputValue]);
-			setInputValue(""); // Réinitialise l'input
-		}
+interface PostItProps {
+	postIt: {
+		id: string;
+		text: string;
 	};
+}
+
+function PostIt({ postIt }: PostItProps) {
+	const randomnumber = useMemo(() => Math.floor(Math.random() * 5), []);
 	return (
 		<>
-			<div className="input-container">
-				<textarea
-					className="input-postit"
-					type="text"
-					value={inputValue}
-					onChange={(e) => setInputValue(e.target.value)}
-					placeholder="Écris ton moment positif ici..."
-                    onKeyUp={(e) => {
-						if (e.key === "Enter") handleAddPostIt();
-					}}
-				/>
-				<button
-					id="creaPostIt"
-					className="icon-postit"
-					type="button"
-					onClick={handleAddPostIt}
-					
-				>
-					Ajouter un post-it
-				</button>
-			</div>
-			<div className="post-it-board">
-				{postIts.map((postIt, index) => (
-					<div key={index} className="post-it">
-						{postIt}
-					</div>
-				))}
-			</div>
+			<textarea
+				key={postIt.id}
+				className="post-it"
+				style={{
+					transform: `rotate(${randomnumber}deg)`,
+				}}
+			>
+				{postIt.text}
+			</textarea>
 		</>
 	);
 }

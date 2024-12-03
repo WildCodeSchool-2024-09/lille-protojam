@@ -1,5 +1,5 @@
 import "./Journal.css";
-import PostIt from "../components/PostIt";
+import PostIt from "../components/PostItList";
 
 function Journal() {
 	return (
