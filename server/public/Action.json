@@ -1,0 +1,199 @@
+{
+	"actions_bienveillantes": [
+		{ "id": 1, "action": "Offrir un sourire à un inconnu." },
+		{
+			"id": 2,
+			"action": "Écouter attentivement quelqu'un qui a besoin de parler."
+		},
+		{ "id": 3, "action": "Tenir la porte ouverte pour quelqu'un." },
+		{
+			"id": 4,
+			"action": "Complimenter sincèrement quelqu'un sur son apparence ou son travail."
+		},
+		{
+			"id": 5,
+			"action": "Envoyer un message de soutien à un ami qui traverse une période difficile."
+		},
+		{
+			"id": 6,
+			"action": "Prendre quelques minutes pour aider un collègue avec une tâche."
+		},
+		{
+			"id": 7,
+			"action": "Offrir des vêtements ou des objets dont vous n'avez plus besoin à une organisation caritative."
+		},
+		{
+			"id": 8,
+			"action": "Faire une petite surprise à un proche pour lui remonter le moral."
+		},
+		{
+			"id": 9,
+			"action": "Donner un coup de main à quelqu'un qui porte une charge lourde."
+		},
+		{
+			"id": 10,
+			"action": "Offrir un café ou un repas à une personne sans abri."
+		},
+
+		{
+			"id": 11,
+			"action": "Laisser un mot gentil sur le bureau d'un collègue."
+		},
+		{
+			"id": 12,
+			"action": "Faire un don à une œuvre de charité qui vous tient à cœur."
+		},
+		{
+			"id": 13,
+			"action": "Proposer votre aide à un voisin âgé pour faire ses courses."
+		},
+		{
+			"id": 14,
+			"action": "Rendre un service à quelqu'un sans rien attendre en retour."
+		},
+		{
+			"id": 15,
+			"action": "Encourager quelqu'un à poursuivre ses rêves et ses objectifs."
+		},
+		{
+			"id": 16,
+			"action": "Féliciter quelqu'un pour ses réussites, même petites."
+		},
+		{
+			"id": 17,
+			"action": "Partager un livre ou un film inspirant avec un ami."
+		},
+		{
+			"id": 18,
+			"action": "Faire une pause pour discuter avec un collègue isolé."
+		},
+		{
+			"id": 19,
+			"action": "Aider un enfant ou un adolescent avec ses devoirs."
+		},
+		{
+			"id": 20,
+			"action": "Faire un geste de gentillesse en ligne, comme un commentaire positif."
+		},
+
+		{
+			"id": 21,
+			"action": "Rappeler à un ami qu'il est important et apprécié."
+		},
+		{
+			"id": 22,
+			"action": "Laisser un pourboire généreux à un serveur ou une serveuse."
+		},
+		{
+			"id": 23,
+			"action": "Envoyer une carte ou un message de remerciement à quelqu'un qui vous a aidé."
+		},
+		{
+			"id": 24,
+			"action": "Prendre un moment pour apprécier la beauté autour de vous et la partager."
+		},
+		{
+			"id": 25,
+			"action": "Accueillir un nouveau collègue ou camarade avec bienveillance."
+		},
+		{
+			"id": 26,
+			"action": "Faire du bénévolat pour une cause qui vous touche."
+		},
+		{
+			"id": 27,
+			"action": "Offrir des fleurs à quelqu'un pour égayer sa journée."
+		},
+		{
+			"id": 28,
+			"action": "Partager un repas avec quelqu'un qui se sent seul."
+		},
+		{
+			"id": 29,
+			"action": "Faire un geste de gentillesse pour l'environnement, comme ramasser des déchets."
+		},
+		{
+			"id": 30,
+			"action": "Faire un compliment sincère à quelqu'un qui vous aide au quotidien."
+		},
+
+		{
+			"id": 31,
+			"action": "Soutenir une cause locale en participant à un événement ou une collecte."
+		},
+		{
+			"id": 32,
+			"action": "Faire un effort pour rendre l'autre personne heureuse, même sans raison particulière."
+		},
+		{
+			"id": 33,
+			"action": "Prendre le temps de remercier quelqu'un pour un petit service rendu."
+		},
+		{ "id": 34, "action": "Encourager quelqu'un qui doute de lui-même." },
+		{
+			"id": 35,
+			"action": "Offrir une aide pratique à quelqu'un qui traverse une situation difficile."
+		},
+		{
+			"id": 36,
+			"action": "Prendre soin d'un animal de compagnie ou d'un animal errant."
+		},
+		{
+			"id": 37,
+			"action": "Envoyer un message d'encouragement à quelqu'un qui commence un nouveau projet."
+		},
+		{
+			"id": 38,
+			"action": "Fournir des ressources ou des informations utiles à quelqu'un dans le besoin."
+		},
+		{
+			"id": 39,
+			"action": "Proposer une activité agréable à quelqu'un pour égayer sa journée."
+		},
+		{
+			"id": 40,
+			"action": "Éviter de juger et faire preuve de patience envers les autres."
+		},
+
+		{
+			"id": 41,
+			"action": "Offrir un soutien émotionnel à quelqu'un qui traverse une période difficile."
+		},
+		{
+			"id": 42,
+			"action": "Réconforter une personne qui vient de subir une perte."
+		},
+		{
+			"id": 43,
+			"action": "Donner de l'attention à quelqu'un qui se sent négligé."
+		},
+		{
+			"id": 44,
+			"action": "Partagez un moment de rire et de joie avec quelqu'un."
+		},
+		{
+			"id": 45,
+			"action": "Faire preuve de bienveillance en écoutant les préoccupations d'un collègue."
+		},
+		{
+			"id": 46,
+			"action": "Encourager une personne à exprimer ses émotions de manière saine."
+		},
+		{
+			"id": 47,
+			"action": "Faire preuve de gratitude envers ceux qui vous entourent."
+		},
+		{
+			"id": 48,
+			"action": "Laisser un message d'encouragement pour quelqu'un qui a du mal à avancer."
+		},
+		{
+			"id": 49,
+			"action": "Offrir un soutien moral à quelqu'un qui traverse un échec."
+		},
+		{
+			"id": 50,
+			"action": "Prendre un moment pour apprécier et remercier les personnes qui rendent votre vie meilleure."
+		}
+	]
+}

@@ -1,0 +1,28 @@
+.profile-container  {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+ 
+.action-container,
+.mood-container,
+.journal-container {
+    width: 15rem;
+    height: 20rem;
+    /* border-left: 7rem solid transparent;
+    border-right: 7rem solid transparent;
+    border-bottom: 17rem solid #3498db; */
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5rem;
+    
+}
+
+.title-action,
+.title-mood,
+.title-journal {
+    font-size: 1.3rem;
+    justify-self: center;
+    margin-top: 8rem;
+}
+

@@ -25,8 +25,9 @@ function PostIt() {
 					className="icon-postit"
 					type="button"
 					onClick={handleAddPostIt}
-                    onKeyUp={(e) => { if (e.key === "Enter") handleAddPostIt(); }}
-				
+					onKeyUp={(e) => {
+						if (e.key === "Enter") handleAddPostIt();
+					}}
 				>
 					Ajouter un post-it
 				</button>
