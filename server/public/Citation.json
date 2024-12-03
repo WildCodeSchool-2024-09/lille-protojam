@@ -1,0 +1,258 @@
+{
+	"citations": [
+		{
+			"id": 1,
+			"mood": "heureux",
+			"citation": "Le bonheur n'est pas une destination, c'est une manière de voyager."
+		},
+		{
+			"id": 2,
+			"mood": "heureux",
+			"citation": "Un sourire est le soleil de l'âme."
+		},
+		{
+			"id": 3,
+			"mood": "heureux",
+			"citation": "Chaque jour est une nouvelle opportunité de briller."
+		},
+		{
+			"id": 4,
+			"mood": "heureux",
+			"citation": "La vie est belle quand tu choisis de voir la beauté."
+		},
+		{
+			"id": 5,
+			"mood": "heureux",
+			"citation": "Le plus grand bonheur dans la vie est de savoir que l'on est aimé."
+		},
+		{
+			"id": 6,
+			"mood": "heureux",
+			"citation": "La joie est une lumière qui illumine même les jours sombres."
+		},
+		{
+			"id": 7,
+			"mood": "heureux",
+			"citation": "Rien n'est impossible pour ceux qui croient en la magie de la vie."
+		},
+		{
+			"id": 8,
+			"mood": "heureux",
+			"citation": "Le bonheur est une direction, pas une destination."
+		},
+		{
+			"id": 9,
+			"mood": "heureux",
+			"citation": "Un cœur rempli de gratitude transforme les moments ordinaires en moments extraordinaires."
+		},
+		{
+			"id": 10,
+			"mood": "heureux",
+			"citation": "La vie est courte, rends-la belle."
+		},
+
+		{
+			"id": 11,
+			"mood": "neutre",
+			"citation": "La vie est faite de hauts et de bas, l'essentiel est de continuer."
+		},
+		{
+			"id": 12,
+			"mood": "neutre",
+			"citation": "Tu n'as pas à tout comprendre pour avancer."
+		},
+		{
+			"id": 13,
+			"mood": "neutre",
+			"citation": "La paix intérieure commence par l'acceptation de ce qui est."
+		},
+		{
+			"id": 14,
+			"mood": "neutre",
+			"citation": "Le changement est la seule constante dans la vie."
+		},
+		{
+			"id": 15,
+			"mood": "neutre",
+			"citation": "La vie continue, peu importe les obstacles."
+		},
+		{
+			"id": 16,
+			"mood": "neutre",
+			"citation": "Même au milieu des tempêtes, il y a un calme à trouver."
+		},
+		{
+			"id": 17,
+			"mood": "neutre",
+			"citation": "Parfois, il faut prendre du recul pour avancer."
+		},
+		{
+			"id": 18,
+			"mood": "neutre",
+			"citation": "L'équilibre de la vie est fait de moments de silence et de bruit."
+		},
+		{
+			"id": 19,
+			"mood": "neutre",
+			"citation": "Parfois, il faut s'arrêter pour recommencer."
+		},
+		{
+			"id": 20,
+			"mood": "neutre",
+			"citation": "Le temps a un pouvoir magique de guérison, tout se calmera finalement."
+		},
+
+		{
+			"id": 21,
+			"mood": "triste",
+			"citation": "La tristesse est une rivière dans laquelle il faut parfois se perdre pour se retrouver."
+		},
+		{
+			"id": 22,
+			"mood": "triste",
+			"citation": "Les larmes ne font aucun mal, elles purifient l'âme."
+		},
+		{
+			"id": 23,
+			"mood": "triste",
+			"citation": "Parfois, il faut se perdre pour se retrouver."
+		},
+		{
+			"id": 24,
+			"mood": "triste",
+			"citation": "La douleur fait partie de la vie, mais elle se transforme toujours en force."
+		},
+		{
+			"id": 25,
+			"mood": "triste",
+			"citation": "Les nuages cachent souvent la lumière, mais le soleil revient toujours."
+		},
+		{
+			"id": 26,
+			"mood": "triste",
+			"citation": "Les ombres de la vie nous rappellent la beauté de la lumière."
+		},
+		{
+			"id": 27,
+			"mood": "triste",
+			"citation": "Même dans les moments sombres, il y a toujours une lueur d'espoir."
+		},
+		{
+			"id": 28,
+			"mood": "triste",
+			"citation": "Les cicatrices sont les témoins silencieux de notre force."
+		},
+		{
+			"id": 29,
+			"mood": "triste",
+			"citation": "C'est souvent dans les moments de solitude que l'on trouve la paix intérieure."
+		},
+		{
+			"id": 30,
+			"mood": "triste",
+			"citation": "La pluie nourrit la terre, tout comme la douleur nourrit l'âme."
+		},
+
+		{
+			"id": 31,
+			"mood": "heureux",
+			"citation": "La vie est un cadeau, c'est à nous de l'apprécier pleinement."
+		},
+		{
+			"id": 32,
+			"mood": "heureux",
+			"citation": "Chaque jour est une nouvelle chance de créer des souvenirs heureux."
+		},
+		{
+			"id": 33,
+			"mood": "heureux",
+			"citation": "Quand tu te concentres sur le positif, le monde entier devient plus lumineux."
+		},
+		{
+			"id": 34,
+			"mood": "heureux",
+			"citation": "L'amour est la source du vrai bonheur."
+		},
+		{
+			"id": 35,
+			"mood": "heureux",
+			"citation": "Le bonheur réside dans les petites choses de la vie."
+		},
+		{
+			"id": 36,
+			"mood": "heureux",
+			"citation": "Le bonheur ne se trouve pas dans les choses, mais dans les moments partagés."
+		},
+		{
+			"id": 37,
+			"mood": "heureux",
+			"citation": "Être heureux ne dépend pas de ce que tu as, mais de ce que tu ressens."
+		},
+		{
+			"id": 38,
+			"mood": "heureux",
+			"citation": "Les sourires sont gratuits, mais ils valent plus que de l'or."
+		},
+		{
+			"id": 39,
+			"mood": "heureux",
+			"citation": "La vie est plus belle quand on prend le temps de l'admirer."
+		},
+		{
+			"id": 40,
+			"mood": "heureux",
+			"citation": "Le bonheur se trouve dans l'instant présent."
+		},
+
+		{
+			"id": 41,
+			"mood": "neutre",
+			"citation": "Il n'y a pas de chemin vers le bonheur, le bonheur est le chemin."
+		},
+		{
+			"id": 42,
+			"mood": "neutre",
+			"citation": "Parfois, il suffit de respirer profondément pour retrouver son équilibre."
+		},
+		{
+			"id": 43,
+			"mood": "neutre",
+			"citation": "Il n'y a pas de mauvais moments, seulement des leçons à apprendre."
+		},
+		{
+			"id": 44,
+			"mood": "neutre",
+			"citation": "Tout est temporaire, y compris les mauvais moments."
+		},
+		{
+			"id": 45,
+			"mood": "neutre",
+			"citation": "Ce n'est pas ce qui nous arrive, mais comment nous réagissons qui compte."
+		},
+		{
+			"id": 46,
+			"mood": "neutre",
+			"citation": "Le calme intérieur est une arme contre les tempêtes extérieures."
+		},
+		{
+			"id": 47,
+			"mood": "neutre",
+			"citation": "Accepte ce qui est, laisse aller ce qui était, et aie foi en ce qui sera."
+		},
+		{
+			"id": 48,
+			"mood": "neutre",
+			"citation": "Il faut parfois lâcher prise pour aller de l'avant."
+		},
+		{
+			"id": 49,
+			"mood": "neutre",
+			"citation": "L'harmonie naît du respect de toutes les phases de la vie."
+		},
+		{
+			"id": 50,
+			"mood": "neutre",
+			"citation": "Même les jours gris ont leur propre beauté."
+		}
+	]
+}

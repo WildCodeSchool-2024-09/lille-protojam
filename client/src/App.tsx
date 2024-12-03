@@ -1,10 +1,10 @@
 import "./App.css";
-import DailyAct from "./pages/DailyAct/DailyAct";
+import Login from "./components/Login/Login";
 
 function App() {
 	return (
 		<>
-			<DailyAct />
+			<Login />
 		</>
 	);
 }
