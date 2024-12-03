@@ -13,6 +13,7 @@ import Login from "./components/Login/Login";
 import Home from "./pages/Home";
 import Journal from "./pages/Journal";
 import DailyAct from "./pages/DailyAct/DailyAct";
+import Homepage from "./pages/Homepage/homepage";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <>
-        <Home />
+        <Homepage />
       </>
     ),
   },
