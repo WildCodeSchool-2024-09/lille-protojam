@@ -2,43 +2,13 @@ import React from "react";
 import "./Journal.css";
 
 function Journal() {
-    return (
-					<>
-						<h1>post-it</h1>
-						<button
-							id="creaPostIt"
-							className="icon-postit"
-							key="uniqueKey"
-							type="button"
-						>
-							un click pour un post-it ...
-						</button>
-						<button
-							id="creaPostIt"
-							className="icon-postit"
-							key="uniqueKey"
-							type="button"
-						>
-							un click pour un post-it ...
-						</button>
-						<button
-							id="creaPostIt"
-							className="icon-postit"
-							key="uniqueKey"
-							type="button"
-						>
-							un click pour un post-it ...
-						</button>
-						<button
-							id="creaPostIt"
-							className="icon-postit"
-							key="uniqueKey"
-							type="button"
-						>
-							un click pour un post-it ...
-						</button>
-					</>
-				);
+    return ( 
+        <><h2 className="journal-title">Note les petits moments positifs qui t'ont marqués dans ta journée</h2>
+        <div className="board-container">
+
+        </div>
+        </>
+     );
 }
 
 export default Journal;
