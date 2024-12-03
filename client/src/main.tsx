@@ -8,7 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Import the main app component
 import App from "./App";
 import UsersProfile from "./pages/UsersProfile/UsersProfile";
-import Mood from "./components/mood/Mood";
+import Mood from "./components/Mood/Mood";
 import Login from "./components/Login/Login";
 import Home from "./pages/Home";
 import Journal from "./pages/Journal";
