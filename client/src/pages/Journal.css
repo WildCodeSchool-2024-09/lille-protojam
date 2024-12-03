@@ -1,4 +1,22 @@
-body {
-	background-image: url("../assets/images/tableau.jpg");
-	background-size: contain;
+#root {
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
+
+.board-container {
+    margin: 1rem 0;
+    
+	width: 95%;
+	height: 95%;
+	background-image: url("../assets/images/background.jpg");
+	border: 15px ridge #c9592a;
+	border-radius: 10px;
+    box-shadow: 9px 9px 15px 5px #000000;
+}
+
+.journal-title {
+    margin: 1rem;
+}
+
