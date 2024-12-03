@@ -28,60 +28,65 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: (
-      <>
-        <Home />
-      </>
-    ),
-  },
-  {
-    path: "/login",
-    element: (
-      <>
-        <Login />
-      </>
-    ),
-  },
-  {
-    path: "/profile",
-    element: (
-      <>
-        <UsersProfile />
-      </>
-    ),
-  },
-  {
-    path: "/profile-actions",
-    element: (
-      <>
-        <DailyAct />
-      </>
-    ),
-  },
-  {
-    path: "/profile-journal", //
-    element: (
-      <>
-        <Journal />
-      </>
-    ),
-  },
-  {
-    path: "/profile-mood",
-    element: (
-      <>
-        <Mood />
-      </>
-    ),
-  },
-  {
-    path: "/error",
-    element: (
-      <>
-        <Error />
-      </>
-    ),
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: (
+          <>
+            <Home />
+          </>
+        ),
+      },
+      {
+        path: "/login",
+        element: (
+          <>
+            <Login />
+          </>
+        ),
+      },
+      {
+        path: "/profile",
+        element: (
+          <>
+            <UsersProfile />
+          </>
+        ),
+      },
+      {
+        path: "/profile-actions",
+        element: (
+          <>
+            <DailyAct />
+          </>
+        ),
+      },
+      {
+        path: "/profile-journal", //
+        element: (
+          <>
+            <Journal />
+          </>
+        ),
+      },
+      {
+        path: "/profile-mood",
+        element: (
+          <>
+            <Mood />
+          </>
+        ),
+      },
+      {
+        path: "/error",
+        element: (
+          <>
+            <Error />
+          </>
+        ),
+      },
+    ],
   },
 ]);
 
