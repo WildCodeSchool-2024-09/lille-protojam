@@ -1,12 +1,7 @@
 import "./App.css";
-import Journal from "./pages/Journal";
 
 function App() {
-  return (
-    <>
-    < Journal />
-    </>
-  );
+  return <></>;
 }
 
 export default App;

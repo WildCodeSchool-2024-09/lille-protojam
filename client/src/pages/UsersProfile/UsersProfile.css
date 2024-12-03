@@ -1,3 +1,7 @@
+body {
+    background-color:  #B8B4A1;
+}
+
 .profile-container  {
     display: flex;
     flex-direction:row;
@@ -8,21 +12,22 @@
 .mood-container,
 .journal-container {
     width: 15rem;
-    height: 20rem;
-    /* border-left: 7rem solid transparent;
-    border-right: 7rem solid transparent;
-    border-bottom: 17rem solid #3498db; */
+    height: 24rem;
     border: 2px solid black;
     border-radius: 10px;
+    border: none;
     margin: 5rem;
+    background-color: #8E9E81;
     
 }
 
-.title-action,
-.title-mood,
-.title-journal {
+.title-profile {
     font-size: 1.3rem;
     justify-self: center;
     margin-top: 8rem;
+    color: black;
 }
 
+.link-profile {
+    text-decoration: none;
+}   
