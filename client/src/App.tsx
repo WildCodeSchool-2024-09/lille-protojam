@@ -1,14 +1,10 @@
 import "./App.css";
-import Journal from "./pages/Journal";
-import Login from "./components/Login/Login";
-
+import Mood from "./components/mood/Mood";
 
 function App() {
-
   return (
     <>
-    < Journal />
-      <Login />
+      <Mood />
     </>
   );
 }

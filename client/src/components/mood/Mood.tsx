@@ -8,27 +8,31 @@ function Mood() {
     setMoodcount(moodCount - 1);
   };
 
-  const handleclickNeutral = () => {
-    if (moodCount <= 0) {
-      setMoodcount(moodCount + 1);
-    }
-    setMoodcount(moodCount - 1);
-  };
-
   const handleClickSad = () => {
     setMoodcount(moodCount + 1);
   };
 
-  // jauge :
-  // Entre -50 et 50
-  // Jauge = total count = happy + sad
-  // total <= 0 ? total + neutre : total - neutre
+  const handleclickNeutral = () => {
+    if (moodCount === 0) {
+      setMoodcount(moodCount);
+    }
+    if (moodCount < 0) {
+      setMoodcount(moodCount + 1);
+    }
+    if (moodCount > 0) {
+      setMoodcount(moodCount - 1);
+    }
+  };
+
+  const calculateCursorPosition = () => {
+    return `${((moodCount + 10) / 20) * 100}%`;
+  };
 
   return (
     <>
       <div className="mood-container">
         <div className="smiley-container">
-          {/*  */}
+          {/* Happy face */}
           <button
             type="button"
             className="button-face button-happy"
@@ -44,7 +48,7 @@ function Mood() {
               </div>
             </div>
           </button>
-          {/*  */}
+          {/* Neutral face */}
           <button
             type="button"
             className="button-face button-neutral"
@@ -60,7 +64,7 @@ function Mood() {
               </div>
             </div>
           </button>
-          {/*  */}
+          {/* Sad face */}
           <button
             type="button"
             className="button-face button-sad"
@@ -77,15 +81,11 @@ function Mood() {
             </div>
           </button>
         </div>
-        <div className="mood-gauge">
-          <div className="total-count">
-            <h3>Total : {moodCount}</h3>
-          </div>
-          <div className="left-side-pos" />
-          <div className="center-pos" />
-          <div className="right-side-pos" />
-          <div className="cursor" />
+        {/* Mood gauge */}
+        <div className="gauge gradient-bar">
+          <div className="cursor" style={{ left: calculateCursorPosition() }} />
         </div>
+        <h3>Total : {moodCount}</h3>
       </div>
     </>
   );
