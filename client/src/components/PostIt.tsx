@@ -13,21 +13,22 @@ function PostIt() {
 	return (
 		<>
 			<div className="input-container">
-				<input
+				<textarea
 					className="input-postit"
 					type="text"
 					value={inputValue}
 					onChange={(e) => setInputValue(e.target.value)}
 					placeholder="Écris ton moment positif ici..."
+                    onKeyUp={(e) => {
+						if (e.key === "Enter") handleAddPostIt();
+					}}
 				/>
 				<button
 					id="creaPostIt"
 					className="icon-postit"
 					type="button"
 					onClick={handleAddPostIt}
-					onKeyUp={(e) => {
-						if (e.key === "Enter") handleAddPostIt();
-					}}
+					
 				>
 					Ajouter un post-it
 				</button>
