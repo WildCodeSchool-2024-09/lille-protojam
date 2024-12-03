@@ -1,0 +1,50 @@
+.button-connexion {
+  background-color: #7c7c7c;
+  color: white;
+  border: none;
+  padding: 25px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2%;
+}
+
+.citation-container {
+  border: solid 3px grey;
+  padding: 5%;
+  width: 30%;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f1e7e7;
+  margin: 20px auto;
+  text-align: center;
+  margin-right: 45%;
+  margin-top: 10%;
+  transition: all 0.3s ease;
+}
+
+.citation-container p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.citation-container h1 {
+  font-size: 36px;
+  color: #161515;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.citation-container:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Ombre plus forte au survol */
+  transform: translateY(-5px); /* Légère élévation du bloc lors du survol */
+}
