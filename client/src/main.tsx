@@ -1,7 +1,6 @@
 // Import necessary modules from React and React Router
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 /* ************************************************************************* */
 
@@ -25,6 +24,7 @@ import Error from "./pages/Error/Error";
 
 // Create router configuration with routes
 // You can add more routes as you build out your app!
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -84,6 +84,7 @@ const router = createBrowserRouter([
   },
 ]);
 
+
 /* ************************************************************************* */
 
 // Find the root element in the HTML document
@@ -95,7 +96,6 @@ if (rootElement == null) {
 // Render the app inside the root element
 createRoot(rootElement).render(
   <StrictMode>
-    <RouterProvider router={router} />
     <App />
   </StrictMode>
 );
