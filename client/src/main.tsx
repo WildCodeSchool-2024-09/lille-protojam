@@ -48,7 +48,7 @@ const router = createBrowserRouter([
     path: "/profile-actions",
     element: (
       <>
-          <Actions />
+          <DailyAct />
       </>
     ),
   },
