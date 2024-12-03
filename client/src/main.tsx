@@ -8,6 +8,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Import the main app component
 import App from "./App";
 import UsersProfile from "./pages/UsersProfile/UsersProfile";
+import Mood from "./components/mood/Mood";
+import Login from "./components/Login/Login";
+import Home from "./pages/Home";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -24,7 +27,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <>
-          <Home />
+        <Home />
       </>
     ),
   },
@@ -32,7 +35,7 @@ const router = createBrowserRouter([
     path: "/login",
     element: (
       <>
-          <Login />
+        <Login />
       </>
     ),
   },
@@ -40,7 +43,7 @@ const router = createBrowserRouter([
     path: "/profile",
     element: (
       <>
-          <UsersProfile />
+        <UsersProfile />
       </>
     ),
   },
@@ -48,15 +51,15 @@ const router = createBrowserRouter([
     path: "/profile-actions",
     element: (
       <>
-          <DailyAct />
+        <DailyAct />
       </>
     ),
   },
   {
-    path: "/profile-journal", // 
+    path: "/profile-journal", //
     element: (
       <>
-          <Journal />
+        <Journal />
       </>
     ),
   },
@@ -64,7 +67,7 @@ const router = createBrowserRouter([
     path: "/profile-mood",
     element: (
       <>
-          <MoodMeter />
+        <Mood />
       </>
     ),
   },
@@ -83,32 +86,30 @@ createRoot(rootElement).render(
   <StrictMode>
     <RouterProvider router={router} />
     <App />
- 
   </StrictMode>
 );
 
 /**
  * Helpful Notes:
- * 
+ *
  * 1. Adding More Routes:
  *    To add more pages to your app, first create a new component (e.g., About.tsx).
  *    Then, import that component above like this:
- * 
+ *
  *    import About from "./pages/About";
- * 
+ *
  *    Add a new route to the router:
- * 
+ *
  *      {
  *        path: "/about",
  *        element: <About />,  // Renders the About component
  *      }
- * 
+ *
  * 2. Try Nested Routes:
  *    For more complex applications, you can nest routes. This lets you have sub-pages within a main page.
  *    Documentation: https://reactrouter.com/en/main/start/tutorial#nested-routes
- * 
+ *
  * 3. Experiment with Dynamic Routes:
  *    You can create routes that take parameters (e.g., /users/:id).
  *    Documentation: https://reactrouter.com/en/main/start/tutorial#url-params-in-loaders
  */
-
