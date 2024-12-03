@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import "./Mood.css";
 import { MoodContext } from "../../services/MoodContext";
+import { Link } from "react-router-dom";
 
 function Mood() {
   const [moodCount, setMoodcount] = useState(0);
@@ -33,7 +34,9 @@ function Mood() {
 
   return (
     <>
-      <p>{mood}</p>
+      <Link to="/profile-actions">
+        <p>{mood}</p>
+      </Link>
       <div className="mood-container">
         <div className="smiley-container">
           {/*  */}

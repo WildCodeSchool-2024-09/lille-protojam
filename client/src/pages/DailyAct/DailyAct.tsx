@@ -1,6 +1,6 @@
 import "./DailyAct.css";
 import { MoodContext } from "../../services/MoodContext.jsx";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 function DailyAct() {
   // RECUPERE LE TABLEAU VIA USE EFFECT OU LOADER
   const TAB = [
@@ -113,6 +113,22 @@ function DailyAct() {
   ];
 
   const { mood } = useContext(MoodContext);
+  function RandomInArray(array) {
+    const copy = array;
+    const result = [];
+    for (let i = 0; i < 5; i++) {
+      const randomIndex = Math.floor(Math.random() * copy.length);
+      result.push(copy[randomIndex]);
+      copy.splice(randomIndex, 1);
+    }
+    return result;
+  }
+  const [randomTab, setRandomTab] = useState([]);
+
+  useEffect(() => {
+    setRandomTab(RandomInArray(TAB));
+  }, []);
+
   return (
     <main className="dailyact-main">
       <h1>Réalise une bonne action, pour toi ou ton prochain</h1>
@@ -120,7 +136,7 @@ function DailyAct() {
         {" "}
         <p>{mood}</p>
         {/* FILTRE SELON LE CONTEXTE HEUREUX/NEUTRE/TRISTE */}
-        {TAB.map((action) => (
+        {randomTab.map((action) => (
           <div key={action.id}>
             <input type="checkbox" id={action.id} name={action.action} />
             <label for={action.id}> {action.action}</label>
