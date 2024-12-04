@@ -18,13 +18,6 @@ function Homepage() {
 
 	return (
 		<main>
-			<div className="button-container">
-				<Link to="/login">
-					<button type="button" className="button-connexion">
-						Se connecter
-					</button>
-				</Link>
-			</div>
 			<div className="img-container">
 				<img className="image-feelgood" src="feelgood.png" alt="" />
 			</div>
