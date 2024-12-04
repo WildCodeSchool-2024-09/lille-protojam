@@ -14,23 +14,28 @@ function Mood() {
     setMood("happy");
   };
 
-  const handleclickNeutral = () => {
-    if (moodCount <= 0) {
-      setMoodcount(moodCount + 1);
-      setMood("neutral");
-    }
-    setMoodcount(moodCount - 1);
-  };
-
   const handleClickSad = () => {
     setMoodcount(moodCount + 1);
     setMood("sad");
   };
 
-  // jauge :
-  // Entre -50 et 50
-  // Jauge = total count = happy + sad
-  // total <= 0 ? total + neutre : total - neutre
+  const handleclickNeutral = () => {
+          setMood("neutral");
+    if (moodCount === 0) {
+      setMoodcount(moodCount);
+    }
+    if (moodCount < 0) {
+      setMoodcount(moodCount + 1);
+    }
+    if (moodCount > 0) {
+      setMoodcount(moodCount - 1);
+    }
+  };
+  
+  const calculateCursorPosition = () => {
+    return `${((moodCount + 10) / 20) * 100}%`;
+
+  };
 
   return (
     <>
@@ -39,64 +44,36 @@ function Mood() {
       </Link>
       <div className="mood-container">
         <div className="smiley-container">
-          {/*  */}
+          {/* Happy face */}
           <button
             type="button"
             className="button-face button-happy"
             onClick={handleClickHappy}
           >
-            <div className="smiley-happy">
-              <div className=" face face-happy">
-                <div className="eyes">
-                  <div className="left-eye eye" />
-                  <div className="right-eye eye" />
-                </div>
-                <div className=" mouth mouth-happy" />
-              </div>
-            </div>
+            <img src="../happy-face-image.png" alt="happy face" />
           </button>
-          {/*  */}
+          {/* Neutral face */}
           <button
             type="button"
             className="button-face button-neutral"
             onClick={handleclickNeutral}
           >
-            <div className="smiley-neutral">
-              <div className="face face-neutral">
-                <div className="eyes">
-                  <div className="left-eye eye" />
-                  <div className="right-eye eye" />
-                </div>
-                <div className="mouth mouth-neutral" />
-              </div>
-            </div>
+            <img src="../neutral-face-image.png" alt="happy face" />
           </button>
-          {/*  */}
+          {/* Sad face */}
           <button
             type="button"
             className="button-face button-sad"
             onClick={handleClickSad}
           >
-            <div className="smiley-sad">
-              <div className="face face-sad">
-                <div className="eyes">
-                  <div className="left-eye eye" />
-                  <div className="right-eye eye" />
-                </div>
-                <div className="mouth mouth-sad" />
-              </div>
-            </div>
+            <img src="../sad-face-image.png" alt="happy face" />
           </button>
         </div>
-        <div className="mood-gauge">
-          <div className="total-count">
-            <h3>Total : {moodCount}</h3>
-          </div>
-          <div className="left-side-pos" />
-          <div className="center-pos" />
-          <div className="right-side-pos" />
-          <div className="cursor" />
+        {/* Mood gauge */}
+        <div className="gauge gradient-bar">
+          <div className="cursor" style={{ left: calculateCursorPosition() }} />
         </div>
+        <h3>Total : {moodCount}</h3>
       </div>
     </>
   );
