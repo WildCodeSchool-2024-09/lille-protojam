@@ -17,15 +17,20 @@ body {
     border-radius: 10px;
     border: none;
     margin: 5rem;
-    background-color: #8E9E81;
+    background-color: transparent;
     
 }
 
 .title-profile {
     font-size: 1.3rem;
+    text-align: -webkit-center;
     justify-self: center;
     margin-top: 8rem;
     color: black;
+    border: 2px solid transparent;
+    height: 15rem;
+    height: 15rem;
+    width: 13rem;
 }
 
 .link-profile {

@@ -1,0 +1,14 @@
+.logo-navbar {
+width: 20%;
+}
+
+.Navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: beige;
+}
+
+.about{
+    margin-right: 20%;
+}

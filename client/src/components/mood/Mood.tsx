@@ -38,15 +38,7 @@ function Mood() {
             className="button-face button-happy"
             onClick={handleClickHappy}
           >
-            <div className="smiley-happy">
-              <div className=" face face-happy">
-                <div className="eyes">
-                  <div className="left-eye eye" />
-                  <div className="right-eye eye" />
-                </div>
-                <div className=" mouth mouth-happy" />
-              </div>
-            </div>
+            <img src="../happy-face-image.png" alt="happy face" />
           </button>
           {/* Neutral face */}
           <button
@@ -54,15 +46,7 @@ function Mood() {
             className="button-face button-neutral"
             onClick={handleclickNeutral}
           >
-            <div className="smiley-neutral">
-              <div className="face face-neutral">
-                <div className="eyes">
-                  <div className="left-eye eye" />
-                  <div className="right-eye eye" />
-                </div>
-                <div className="mouth mouth-neutral" />
-              </div>
-            </div>
+            <img src="../neutral-face-image.png" alt="happy face" />
           </button>
           {/* Sad face */}
           <button
@@ -70,15 +54,7 @@ function Mood() {
             className="button-face button-sad"
             onClick={handleClickSad}
           >
-            <div className="smiley-sad">
-              <div className="face face-sad">
-                <div className="eyes">
-                  <div className="left-eye eye" />
-                  <div className="right-eye eye" />
-                </div>
-                <div className="mouth mouth-sad" />
-              </div>
-            </div>
+            <img src="../sad-face-image.png" alt="happy face" />
           </button>
         </div>
         {/* Mood gauge */}
