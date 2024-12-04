@@ -12,5 +12,5 @@ function App() {
       </MoodProvider>
     </>
   );
-
+}
 export default App;
