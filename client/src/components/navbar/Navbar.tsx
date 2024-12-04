@@ -5,7 +5,7 @@ function Navbar() {
 		<>
 			<div className="Navbar">
 				<img className="logo-navbar" src="/public/LogoFeedGood.png" alt="logo" />
-				<h1>FEEL GOOD</h1>
+				<h1>FEED GOOD</h1>
 				<Link to="/profile" className="profile">
 					Profil
 				</Link>
