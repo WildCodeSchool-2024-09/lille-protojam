@@ -7,7 +7,7 @@
 
 .mood-container {
   width: 80%;
-  margin-top: 108px;
+  margin-top: 10rem;
 }
 
 .img-button {
@@ -68,6 +68,21 @@
   margin: 10px;
   padding: 10px;
   border-radius: 20px;
+  background-color: #d54f53;
+}
+
+.container-warning li {
+  list-style: none;
+}
+
+.link-actions {
+  all: unset;
+  cursor: pointer;
+}
+
+.numero a {
+  all: unset;
+  cursor: pointer;
   box-shadow: #5d6961;
   background-color: #ce4d55;
   text-align: center;
