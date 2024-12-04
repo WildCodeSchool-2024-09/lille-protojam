@@ -1,22 +1,3 @@
-.button-connexion {
-  background-color: #7c7c7c;
-  color: white;
-  border: none;
-  padding: 25px 40px;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.button-container {
-  display: flex;
-  justify-content: flex-end;
-  margin: 2%;
-  margin-top: -3%;
-}
-
 .citation-container {
   border: solid 3px grey;
   padding: 5%;

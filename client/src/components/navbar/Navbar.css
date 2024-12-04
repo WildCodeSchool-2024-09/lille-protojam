@@ -1,5 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .logo-navbar {
-  width: 20%;
+  width: 9%;
 }
 
 .Navbar {
@@ -8,9 +13,18 @@
   justify-content: space-between;
   background-color: beige;
   width: 100%;
-  height: 10rem;
+  height: 8rem;
+  position: fixed;
+  top: 0;
 }
 
 .profile {
-  margin-right: 15%;
+  margin-right: 10%;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.connect-nav {
+  text-decoration: none;
+  color: black;
 }
