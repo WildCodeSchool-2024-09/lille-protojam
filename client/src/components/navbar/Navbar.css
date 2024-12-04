@@ -1,5 +1,5 @@
-img {
-  /* width: 10%; */
+.logo-navbar {
+  width: 20%;
 }
 
 .Navbar {
@@ -9,6 +9,6 @@ img {
   background-color: beige;
 }
 
-link {
-  /* margin-right: 20%; */
+.about {
+  margin-right: 20%;
 }
