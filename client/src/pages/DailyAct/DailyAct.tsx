@@ -6,108 +6,108 @@ function DailyAct() {
   const TAB = [
     {
       id: 1,
-      humeur: "heureux",
+      humeur: "happy",
       action: "Proposer à un ami de sortir pour partager cette bonne énergie.",
     },
     {
       id: 2,
-      humeur: "heureux",
+      humeur: "happy",
       action:
         "S'offrir un petit plaisir comme un dessert ou une activité favorite.",
     },
     {
       id: 3,
-      humeur: "heureux",
+      humeur: "happy",
       action: "Faire un compliment sincère à quelqu'un.",
     },
     {
       id: 4,
-      humeur: "heureux",
+      humeur: "happy",
       action: "Envoyer un message de gratitude à une personne importante.",
     },
     {
       id: 5,
-      humeur: "heureux",
+      humeur: "happy",
       action: "Faire du bénévolat pour répandre sa joie.",
     },
     {
       id: 6,
-      humeur: "neutre",
+      humeur: "neutral",
       action: "Prendre un moment pour méditer ou respirer profondément.",
     },
     {
       id: 7,
-      humeur: "neutre",
+      humeur: "neutral",
       action: "Organiser sa journée ou sa semaine à venir.",
     },
     {
       id: 8,
-      humeur: "neutre",
+      humeur: "neutral",
       action: "Appeler un proche pour prendre des nouvelles.",
     },
     {
       id: 9,
-      humeur: "neutre",
+      humeur: "neutral",
       action: "Lire quelques pages d'un livre inspirant ou motivant.",
     },
     {
       id: 10,
-      humeur: "neutre",
+      humeur: "neutral",
       action:
         "Faire une promenade en plein air pour se reconnecter avec la nature.",
     },
     {
       id: 11,
-      humeur: "triste",
+      humeur: "sad",
       action: "Écrire ses pensées dans un journal pour mieux les comprendre.",
     },
     {
       id: 12,
-      humeur: "triste",
+      humeur: "sad",
       action: "Regarder un film ou écouter de la musique qui remonte le moral.",
     },
     {
       id: 13,
-      humeur: "triste",
+      humeur: "sad",
       action: "Préparer un repas réconfortant et nutritif.",
     },
     {
       id: 14,
-      humeur: "triste",
+      humeur: "sad",
       action: "Demander à un ami de passer du temps ensemble.",
     },
     {
       id: 15,
-      humeur: "triste",
+      humeur: "sad",
       action:
         "Se concentrer sur un petit objectif réalisable pour retrouver un sentiment d'accomplissement.",
     },
     {
       id: 16,
-      humeur: "heureux",
+      humeur: "happy",
       action:
         "Donner une bonne pourboire à un serveur ou à quelqu’un qui offre un service.",
     },
     {
       id: 17,
-      humeur: "heureux",
+      humeur: "happy",
       action:
         "Partager une bonne nouvelle ou un moment inspirant sur les réseaux sociaux.",
     },
     {
       id: 18,
-      humeur: "neutre",
+      humeur: "neutral",
       action:
         "Faire un tri dans ses affaires et donner ce qui n'est plus utilisé.",
     },
     {
       id: 19,
-      humeur: "neutre",
+      humeur: "neutral",
       action: "Envoyer un courrier ou un email à une vieille connaissance.",
     },
     {
       id: 20,
-      humeur: "triste",
+      humeur: "sad",
       action: "Prendre une douche chaude ou un bain pour se détendre.",
     },
   ];
@@ -137,7 +137,7 @@ function DailyAct() {
       <section className="journal">
         {" "}
         <p>{mood}</p>
-        {/* FILTRE SELON LE CONTEXTE HEUREUX/NEUTRE/TRISTE */}
+        {/* FILTRE SELON LE CONTEXTE happy/neutral/TRISTE */}
         {randomTab.map((action) => (
           <div key={action.id}>
             <input type="checkbox" id={action.id} name={action.action} />
