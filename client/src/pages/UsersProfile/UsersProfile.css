@@ -1,25 +1,22 @@
-
-
 .profile-container  {
     display: flex;
     flex-direction:row;
     justify-content: space-between;
 }
  
-.action-container:hover,
-.mood-container:hover,
-.journal-container:hover {
+.action-container-profile:hover,
+.mood-container-profile:hover,
+.journal-container-profile:hover {
     transform: scale(1.05);
     background-color: #f9f9f9;
     opacity: 0.6;
     font-weight: bolder;
     border-color: #9DA895;
-
 }
 
-.action-container,
-.mood-container,
-.journal-container {
+.action-container-profile,
+.mood-container-profile,
+.journal-container-profile {
     width: 15rem;
     height: 24rem;
     border-radius: 10px;
