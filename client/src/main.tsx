@@ -18,7 +18,6 @@ import Error from "./pages/Error/Error";
 import Home from "./pages/Home/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
 
@@ -31,116 +30,63 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // You can add more routes as you build out your app!
 
 const router = createBrowserRouter([
-  {
-
-    path: "/",
-    element: (
-      <>
-        <Homepage />
-      </>
-    ),
-  },
-  {
-    path: "/login",
-    element: (
-      <>
-        <Login />
-      </>
-    ),
-  },
-  {
-    path: "/profile",
-    element: (
-      <>
-        <UsersProfile />
-      </>
-    ),
-  },
-  {
-    path: "/profile-actions",
-    element: (
-      <>
-        <DailyAct />
-      </>
-    ),
-  },
-  {
-    path: "/profile-journal", //
-    element: (
-      <>
-        <Journal />
-      </>
-    ),
-  },
-  {
-    path: "/profile-mood",
-    element: (
-      <>
-        <Mood />
-      </>
-    ),
-
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: (
-          <>
-            <Home />
-          </>
-        ),
-      },
-      {
-        path: "/login",
-        element: (
-          <>
-            <Login />
-          </>
-        ),
-      },
-      {
-        path: "/profile",
-        element: (
-          <>
-            <UsersProfile />
-          </>
-        ),
-      },
-      {
-        path: "/profile-actions",
-        element: (
-          <>
-            <DailyAct />
-          </>
-        ),
-      },
-      {
-        path: "/profile-journal", //
-        element: (
-          <>
-            <Journal />
-          </>
-        ),
-      },
-      {
-        path: "/profile-mood",
-        element: (
-          <>
-            <Mood />
-          </>
-        ),
-      },
-      {
-        path: "/error",
-        element: (
-          <>
-            <Error />
-          </>
-        ),
-      },
-    ],
-
-  },
+	{
+		element: <App />,
+		children: [
+			{
+				path: "/",
+				element: <Homepage />,
+			},
+			{
+				path: "/login",
+				element: (
+					<>
+						<Login />
+					</>
+				),
+			},
+			{
+				path: "/profile",
+				element: (
+					<>
+						<UsersProfile />
+					</>
+				),
+			},
+			{
+				path: "/profile-actions",
+				element: (
+					<>
+						<DailyAct />
+					</>
+				),
+			},
+			{
+				path: "/profile-journal", //
+				element: (
+					<>
+						<Journal />
+					</>
+				),
+			},
+			{
+				path: "/profile-mood",
+				element: (
+					<>
+						<Mood />
+					</>
+				),
+			},
+			{
+				path: "/error",
+				element: (
+					<>
+						<Error />
+					</>
+				),
+			},
+		],
+	},
 ]);
 
 /* ************************************************************************* */
@@ -148,14 +94,14 @@ const router = createBrowserRouter([
 // Find the root element in the HTML document
 const rootElement = document.getElementById("root");
 if (rootElement == null) {
-  throw new Error(`Your HTML Document should contain a <div id="root"></div>`);
+	throw new Error(`Your HTML Document should contain a <div id="root"></div>`);
 }
 
 // Render the app inside the root element
 createRoot(rootElement).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+	<StrictMode>
+		<RouterProvider router={router} />
+	</StrictMode>,
 );
 
 /**
