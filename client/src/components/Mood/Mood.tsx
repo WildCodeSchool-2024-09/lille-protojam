@@ -4,14 +4,15 @@ import { MoodContext } from "../../services/MoodContext";
 import { Link } from "react-router-dom";
 
 function Mood() {
-	const [moodCount, setMoodcount] = useState(0);
-	const [moodText, setMoodText] = useState("test");
-	const { mood, setMood } = useContext(MoodContext);
+  const [moodCount, setMoodcount] = useState(0);
+  const [moodText, setMoodText] = useState("test");
+  const { mood, setMood } = useContext(MoodContext);
 
-	const handleClickHappy = () => {
-		setMoodcount(moodCount - 1);
-		setMood("happy");
-	};
+  const handleClickHappy = () => {
+    setMoodcount(moodCount - 1);
+    setMood("heureux");
+  };
+
 
 	const ScrollToText = () => {
 		const textElement = document.getElementById("target-text");
@@ -28,22 +29,23 @@ function Mood() {
 		}
 	};
 
-	const handleclickNeutral = () => {
-		setMood("neutral");
-		if (moodCount === 0) {
-			setMoodcount(moodCount);
-		}
-		if (moodCount < 0) {
-			setMoodcount(moodCount + 1);
-		}
-		if (moodCount > 0) {
-			setMoodcount(moodCount - 1);
-		}
-	};
 
-	const calculateCursorPosition = () => {
-		return `${((moodCount + 10) / 20) * 100}%`;
-	};
+  const handleclickNeutral = () => {
+    setMood("neutre");
+    if (moodCount === 0) {
+      setMoodcount(moodCount);
+    }
+    if (moodCount < 0) {
+      setMoodcount(moodCount + 1);
+    }
+    if (moodCount > 0) {
+      setMoodcount(moodCount - 1);
+    }
+  };
+
+  const calculateCursorPosition = () => {
+    return `${((moodCount + 10) / 20) * 100}%`;
+  };
 
 	return (
 		<>
@@ -149,6 +151,7 @@ function Mood() {
 			)}
 		</>
 	);
+
 }
 
 export default Mood;
