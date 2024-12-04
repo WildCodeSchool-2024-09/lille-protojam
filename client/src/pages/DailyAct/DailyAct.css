@@ -1,14 +1,21 @@
 .dailyact-main {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .journal {
-	width: 60%;
-	padding: 2%;
-	text-align: center;
-	background-color: rgb(232, 232, 155);
-	border-radius: 20px;
+  padding: 16px;
+  width: 800px;
+  height: 300px;
+  text-align: center;
+  background-color: rgb(232, 232, 155);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.action-list {
+  font-size: 1.5rem;
 }

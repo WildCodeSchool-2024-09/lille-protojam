@@ -36,12 +36,14 @@ function DailyAct() {
       <h1>Réalise une bonne action, pour toi ou ton prochain</h1>
       <section className="journal">
         {" "}
-        <p>{mood}</p>
         {/* FILTRE SELON LE CONTEXTE happy/neutral/TRISTE */}
         {randomTab?.map((action) => (
           <div key={action.id}>
             <input type="checkbox" id={action.id} name={action.action} />
-            <label for={action.id}> {action.action}</label>
+            <label className="action-list" for={action.id}>
+              {" "}
+              {action.action}
+            </label>
           </div>
         ))}
       </section>
