@@ -1,7 +1,7 @@
 import "./Error.css";
 import { Link } from "react-router-dom";
 
-function Error() {
+function ErrorPage() {
 	return (
 		<>
 			<main className="error-main">
@@ -24,4 +24,4 @@ function Error() {
 	);
 }
 
-export default Error;
+export default ErrorPage;

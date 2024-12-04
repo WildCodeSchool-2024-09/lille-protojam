@@ -1,16 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Jacquarda+Bastarda+9&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Wet+Paint&display=swap");
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	font-family: "Nunito", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-
 body {
-	background-image: url("/public/feedgood-background.png");
+	background-image: url("/feedgood-background.png");
 	background-size: cover;
 }
 
 #root {
-  min-height: 100vh;
-  max-height: 300vh;
+	min-height: 100vh;
+	max-height: 300vh;
 }
