@@ -42,7 +42,7 @@ body {
 
 .login-form input:focus {
   border-color: #8e9e81;
-  box-shadow: 0 0 4px rgba(108, 168, 241, 0.5);
+  box-shadow: 0 0 4px rgba(193, 248, 64, 0.5);
 }
 
 .login-form button {
@@ -62,10 +62,6 @@ body {
 }
 
 .error-message {
-  color: red;
+  color: #b8b4a1;
   margin: 10px;
-}
-
-.connected-button {
-  background-color: #8e9e81;
 }
