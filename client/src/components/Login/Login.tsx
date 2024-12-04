@@ -7,7 +7,7 @@ function Login() {
 	const [login, setLogin] = useState({ email: "", password: "" });
 	const [errorMessage, setErrorMessage] = useState("");
 	const navigate = useNavigate();
-	const { setIsUSerConnected } = useContext(UserContext);
+	const { setUserConnected } = useContext(UserContext);
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
@@ -15,7 +15,7 @@ function Login() {
 			login.email === "legentiltoto@bienveillance.fr" &&
 			login.password === "devenirgentil"
 		) {
-			setIsUSerConnected(true);
+			setUserConnected(true);
 			navigate("/profile");
 		} else if (login.email !== "legentiltoto@bienveillance.fr") {
 			setErrorMessage("Mauvais email");
@@ -54,7 +54,7 @@ function Login() {
 					/>
 				</label>
 				{errorMessage && <p className="error-message"> {errorMessage}</p>}
-				<button type="button">Valider</button>
+				<button type="submit">Valider</button>
 			</form>
 		</div>
 	);

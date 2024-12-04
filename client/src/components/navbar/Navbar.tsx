@@ -14,13 +14,15 @@ function Navbar() {
 					src="/public/LogoFeedGood.png"
 					alt="logo"
 				/>
-				<h1>FEEL GOOD</h1>
+				<h1>FEED GOOD</h1>
 				{isUserConnected ? (
 					<Link to="/profile" className="profile">
 						Profil
 					</Link>
 				) : (
-					<p> Se connecter </p>
+					<Link to="/login" className="profile">
+						<p className="connect-nav"> Se connecter </p>
+					</Link>
 				)}
 			</div>
 		</>
