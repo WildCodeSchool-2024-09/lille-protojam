@@ -51,7 +51,7 @@ function Login() {
 					/>
 				</label>
 				{errorMessage && <p className="error-message"> {errorMessage}</p>}
-				<button>Valider</button>
+				<button type="button">Valider</button>
 			</form>
 		</div>
 	);
