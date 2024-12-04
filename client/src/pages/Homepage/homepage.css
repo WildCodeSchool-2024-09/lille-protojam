@@ -1,36 +1,36 @@
 .citation-container {
-	border: solid 3px grey;
-	padding: 5%;
-	width: 30%;
-	border-radius: 25px;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-	background-color: #f1e7e7;
-	margin: 20px auto;
-	text-align: center;
-	margin-right: 45%;
-	margin-top: 10%;
-	transition: all 0.3s ease;
+  border: solid 3px grey;
+  padding: 5%;
+  height: 300px;
+  width: 600px;
+
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f1e7e7;
+  margin: 20px auto;
+  text-align: center;
+  margin-right: 45%;
+  margin-top: 10%;
+  transition: all 0.3s ease;
 }
 
 .citation-container p {
-	font-size: 16px;
-	color: #555;
-	line-height: 1.6;
-	margin: 0;
+  font-size: 32px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .citation-container h1 {
-	font-size: 36px;
-	color: #161515;
-	font-weight: bold;
-	margin-bottom: 20px;
+  font-size: 36px;
+  color: #161515;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .image-feelgood {
-	position: absolute;
-	margin-left: 35%;
-	margin-top: -4%;
-	transform: rotate(20deg);
-}
-.img-container {
+  position: absolute;
+  margin-left: 20%;
+  margin-top: -8%;
+  transform: rotate(20deg);
 }
