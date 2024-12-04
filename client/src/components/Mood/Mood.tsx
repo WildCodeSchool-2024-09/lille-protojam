@@ -1,18 +1,26 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./Mood.css";
+import { MoodContext } from "../../services/MoodContext";
+import { Link } from "react-router-dom";
 
 function Mood() {
   const [moodCount, setMoodcount] = useState(0);
+  const { mood, setMood } = useContext(MoodContext);
+
+  console.log("mooddd", mood);
 
   const handleClickHappy = () => {
     setMoodcount(moodCount - 1);
+    setMood("happy");
   };
 
   const handleClickSad = () => {
     setMoodcount(moodCount + 1);
+    setMood("sad");
   };
 
   const handleclickNeutral = () => {
+          setMood("neutral");
     if (moodCount === 0) {
       setMoodcount(moodCount);
     }
@@ -23,13 +31,17 @@ function Mood() {
       setMoodcount(moodCount - 1);
     }
   };
-
+  
   const calculateCursorPosition = () => {
     return `${((moodCount + 10) / 20) * 100}%`;
+
   };
 
   return (
     <>
+      <Link to="/profile-actions">
+        <p>{mood}</p>
+      </Link>
       <div className="mood-container">
         <div className="smiley-container">
           {/* Happy face */}
