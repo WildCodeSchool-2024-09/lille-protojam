@@ -7,14 +7,14 @@ import { createRoot } from "react-dom/client";
 // Import the main app component
 import App from "./App";
 import UsersProfile from "./pages/UsersProfile/UsersProfile";
-import Mood from "./components/Mood/Mood";
+import Mood from "./components/mood/Mood";
 import Login from "./components/Login/Login";
 import Journal from "./pages/Journal";
 import DailyAct from "./pages/DailyAct/DailyAct";
 
 import Homepage from "./pages/Homepage/homepage";
 
-import Error from "./pages/Error/Error";
+import ErrorPage from "./pages/Error/Error";
 import Home from "./pages/Home/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -79,7 +79,9 @@ const router = createBrowserRouter([
         <Mood />
       </>
     ),
-
+  },
+  {
+    path: "/",
     element: <App />,
     children: [
       {
@@ -134,7 +136,7 @@ const router = createBrowserRouter([
         path: "/error",
         element: (
           <>
-            <Error />
+            <ErrorPage />
           </>
         ),
       },
