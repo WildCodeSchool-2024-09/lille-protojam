@@ -10,13 +10,19 @@
   padding: 16px;
   width: 800px;
   height: 300px;
-  text-align: center;
   background-color: rgb(232, 232, 155);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
 }
 .action-list {
   font-size: 1.5rem;
+}
+
+.checkbox {
+ transform: scale(1.5);
+ margin-right: 5px;
+ 
 }

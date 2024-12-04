@@ -39,7 +39,7 @@ function DailyAct() {
         {/* FILTRE SELON LE CONTEXTE happy/neutral/TRISTE */}
         {randomTab?.map((action) => (
           <div key={action.id}>
-            <input type="checkbox" id={action.id} name={action.action} />
+            <input type="checkbox" id={action.id} name={action.action} className="checkbox"/>
             <label className="action-list" for={action.id}>
               {" "}
               {action.action}
