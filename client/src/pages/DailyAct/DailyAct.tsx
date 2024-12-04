@@ -115,12 +115,14 @@ function DailyAct() {
   const { mood } = useContext(MoodContext);
   function RandomInArray(array) {
     const copy = array;
+    const filteredTab = copy.filter((action) => action.humeur === mood);
     const result = [];
     for (let i = 0; i < 5; i++) {
-      const randomIndex = Math.floor(Math.random() * copy.length);
-      result.push(copy[randomIndex]);
-      copy.splice(randomIndex, 1);
+      const randomIndex = Math.floor(Math.random() * filteredTab.length);
+      result.push(filteredTab[randomIndex]);
+      filteredTab.splice(randomIndex, 1);
     }
+    console.log(result);
     return result;
   }
   const [randomTab, setRandomTab] = useState([]);
@@ -128,7 +130,7 @@ function DailyAct() {
   useEffect(() => {
     setRandomTab(RandomInArray(TAB));
   }, []);
-
+  console.log(mood);
   return (
     <main className="dailyact-main">
       <h1>Réalise une bonne action, pour toi ou ton prochain</h1>
