@@ -1,18 +1,15 @@
 import express from "express";
+import actions from "../public/actions.json";
+import citations from "../public/citations.json";
 
 const router = express.Router();
 
-/* ************************************************************************* */
-// Define Your API Routes Here
-/* ************************************************************************* */
+router.get("/api/actions", function(req, res) {
+	return res.json(actions);
+});
 
-// Define item-related routes
-import itemActions from "./modules/item/itemActions";
-
-router.get("/api/items", itemActions.browse);
-router.get("/api/items/:id", itemActions.read);
-router.post("/api/items", itemActions.add);
-
-/* ************************************************************************* */
+router.get("/api/citations", function(req, res) {
+	return res.json(citations);
+});
 
 export default router;

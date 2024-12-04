@@ -20,7 +20,7 @@ function Mood() {
   };
 
   const handleclickNeutral = () => {
-          setMood("neutral");
+    setMood("neutral");
     if (moodCount === 0) {
       setMoodcount(moodCount);
     }
@@ -31,10 +31,9 @@ function Mood() {
       setMoodcount(moodCount - 1);
     }
   };
-  
+
   const calculateCursorPosition = () => {
     return `${((moodCount + 10) / 20) * 100}%`;
-
   };
 
   return (
@@ -50,7 +49,11 @@ function Mood() {
             className="button-face button-happy"
             onClick={handleClickHappy}
           >
-            <img src="../happy-face-image.png" alt="happy face" />
+            <img
+              className="img-button"
+              src="../happy-face-image.png"
+              alt="happy face"
+            />
           </button>
           {/* Neutral face */}
           <button
@@ -58,7 +61,11 @@ function Mood() {
             className="button-face button-neutral"
             onClick={handleclickNeutral}
           >
-            <img src="../neutral-face-image.png" alt="happy face" />
+            <img
+              className="img-button"
+              src="../neutral-face-image.png"
+              alt="happy face"
+            />
           </button>
           {/* Sad face */}
           <button
@@ -66,14 +73,17 @@ function Mood() {
             className="button-face button-sad"
             onClick={handleClickSad}
           >
-            <img src="../sad-face-image.png" alt="happy face" />
+            <img
+              className="img-button"
+              src="../sad-face-image.png"
+              alt="happy face"
+            />
           </button>
         </div>
         {/* Mood gauge */}
         <div className="gauge gradient-bar">
           <div className="cursor" style={{ left: calculateCursorPosition() }} />
         </div>
-        <h3>Total : {moodCount}</h3>
       </div>
     </>
   );
