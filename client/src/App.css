@@ -1,16 +1,15 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-
 body {
-	background-image: url("/public/feedgood-background.png");
+	background-image: url("/feedgood-background.png");
 	background-size: cover;
 }
 
 #root {
-  min-height: 100vh;
-  max-height: 300vh;
+	min-height: 100vh;
+	max-height: 300vh;
 }
