@@ -1,4 +1,4 @@
-img {
+.logo-navbar{
 	width: 10%;
 }
 
@@ -9,6 +9,6 @@ img {
 	background-color: beige;
 }
 
-link{
+.about{
     margin-right: 20%;
 }
