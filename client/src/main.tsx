@@ -7,7 +7,7 @@ import { createRoot } from "react-dom/client";
 // Import the main app component
 import App from "./App";
 import UsersProfile from "./pages/UsersProfile/UsersProfile";
-import Mood from "./components/mood/Mood";
+import Mood from "./components/Mood/Mood";
 import Login from "./components/Login/Login";
 import Journal from "./pages/Journal";
 import DailyAct from "./pages/DailyAct/DailyAct";
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/profile-actions",
+        path: "/profile/actions",
         element: (
           <>
             <DailyAct />
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/profile-journal", //
+        path: "/profile/journal", //
         element: (
           <>
             <Journal />
@@ -67,7 +67,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/profile-mood",
+        path: "/profile/mood",
         element: (
           <>
             <Mood />
