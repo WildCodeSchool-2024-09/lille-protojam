@@ -13,10 +13,22 @@ function Mood() {
     setMood("heureux");
   };
 
-  const handleClickSad = () => {
-    setMoodcount(moodCount + 1);
-    setMood("triste");
-  };
+
+	const ScrollToText = () => {
+		const textElement = document.getElementById("target-text");
+		if (textElement) {
+			textElement.scrollIntoView({ behavior: "smooth", block: "start" });
+		}
+	};
+
+	const handleClickSad = () => {
+		setMoodcount(moodCount + 1);
+		setMood("sad");
+		if (moodCount >= 1) {
+			ScrollToText();
+		}
+	};
+
 
   const handleclickNeutral = () => {
     setMood("neutre");

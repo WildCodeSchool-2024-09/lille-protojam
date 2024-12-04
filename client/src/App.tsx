@@ -7,14 +7,18 @@ import { CounterProvider } from "./services/CounterContext";
 function App() {
   return (
     <>
+     <UserProvider>
       <MoodProvider>
         <CounterProvider>
           <Navbar />
           <Outlet />
         </CounterProvider>
       </MoodProvider>
+     </UserProvider>
+
     </>
   );
+
 }
 
 export default App;
