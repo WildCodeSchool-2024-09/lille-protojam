@@ -52,11 +52,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/profile/actions",
-        element: (
-          <>
-            <DailyAct />
-          </>
-        ),
+        element: <DailyAct />,
+        loader: () => {
+          return fetch("http://localhost:3310/api/actions")
+            .then((response) => response.json())
+            .then((data) => data.actions);
+        },
       },
       {
         path: "/profile/journal", //
