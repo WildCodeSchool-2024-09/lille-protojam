@@ -1,11 +1,11 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import "./Mood.css";
 import { MoodContext } from "../../services/MoodContext";
 import { Link } from "react-router-dom";
+import { CounterContext } from "../../services/CounterContext";
 
 function Mood() {
-  const [moodCount, setMoodcount] = useState(0);
-  const [moodText, setMoodText] = useState("test");
+  const { moodCount, setMoodcount } = useContext(CounterContext);
   const { mood, setMood } = useContext(MoodContext);
 
   const handleClickHappy = () => {
@@ -37,24 +37,21 @@ function Mood() {
 
   return (
     <>
-      <Link to="/profile/actions">
-        <p>{mood}</p>
-      </Link>
-      <p className="container-explanation">
-        <strong> Bienvenue dans ton espace de bien-être ! 🌟</strong>
-        <br />
-        Ici, tu peux explorer et choisir le mood qui te ressemble le plus en ce
-        moment. Imagine ces trois ambiances comme des fenêtres ouvertes sur ton
-        état d’esprit : chacune a sa couleur, son énergie et son intention. Une
-        fois ton mood sélectionné, il se reflètera dans ta mood barre — une
-        sorte de thermomètre bienveillant qui te permet de visualiser ton humeur
-        du moment. C’est un outil tout simple pour t’aider à te connecter à
-        toi-même, dans un espace où tes émotions ont toute leur place. Prends le
-        temps de sentir ce qui résonne le mieux avec toi. Chaque choix est une
-        belle façon de dire : "Aujourd’hui, je m’écoute et je prends soin de
-        moi." 💛
-      </p>
       <div className="mood-container">
+        <p className="container-explanation">
+          <strong> Bienvenue dans ton espace de bien-être ! 🌟</strong>
+          <br />
+          Ici, tu peux explorer et choisir le mood qui te ressemble le plus en
+          ce moment. Imagine ces trois ambiances comme des fenêtres ouvertes sur
+          ton état d’esprit : chacune a sa couleur, son énergie et son
+          intention. Une fois ton mood sélectionné, il se reflètera dans ta mood
+          barre — une sorte de thermomètre bienveillant qui te permet de
+          visualiser ton humeur du moment. C’est un outil tout simple pour
+          t’aider à te connecter à toi-même, dans un espace où tes émotions ont
+          toute leur place. Prends le temps de sentir ce qui résonne le mieux
+          avec toi. Chaque choix est une belle façon de dire : "Aujourd’hui, je
+          m’écoute et je prends soin de moi." 💛
+        </p>
         <div className="smiley-container">
           {/* Happy face */}
           <button
@@ -116,13 +113,43 @@ function Mood() {
               Parle à une personne de confiance, que ce soit un ami, un proche
               ou un professionnel.
             </li>
+            <li>
+              Réalise quelques
+              <Link to="/profile/actions" className="link-actions">
+                <strong> actions </strong>
+              </Link>
+              pour te sentir mieux
+            </li>
           </ul>
           Si tu ressens le besoin de parler à quelqu’un tout de suite, voici des
           numéros d’urgence où des personnes bienveillantes sont prêtes à
-          t’écouter : Soutien Dépression (SOS Amitié) : 09 72 39 40 50 Suicide
-          Écoute : 01 45 39 40 00 (24h/24 et 7j/7) Numéro national prévention
-          suicide : 3114 Prends soin de toi. Chaque étape compte, et on croit en
-          ta capacité à aller mieux. 💛
+          t’écouter :
+          <ul className="numero">
+            <li>
+              Soutien Dépression (SOS Amitié) :{" "}
+              <a
+                href="tel:+33972394050"
+                aria-label="Appelez-nous au +33972394050"
+              >
+                09 72 39 40 50
+              </a>
+            </li>
+            <li>
+              Suicide Écoute :{" "}
+              <a
+                href="tel:+33145394000"
+                aria-label="Appelez-nous au +33145394000"
+              >
+                01 45 39 40 00{" "}
+              </a>
+              (24h/24 et 7j/7)
+            </li>
+            <li>
+              Numéro national prévention suicide : <a href="te:+3114">3114</a>
+            </li>
+          </ul>
+          Prends soin de toi. Chaque étape compte, et on croit en ta capacité à
+          aller mieux. 💛
         </p>
       ) : (
         ""
