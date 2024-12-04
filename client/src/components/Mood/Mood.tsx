@@ -49,6 +49,7 @@ function Mood() {
 
 	return (
 		<>
+			<div className="mood-container">
 			<Link to="/profile-actions">
 				<p>{mood}</p>
 			</Link>
@@ -66,7 +67,6 @@ function Mood() {
 				belle façon de dire : "Aujourd’hui, je m’écoute et je prends soin de
 				moi." 💛
 			</p>
-			<div className="mood-container">
 				<div className="smiley-container">
 					{/* Happy face */}
 					<button
