@@ -20,7 +20,7 @@ function Mood() {
   };
 
   const handleclickNeutral = () => {
-          setMood("neutral");
+    setMood("neutral");
     if (moodCount === 0) {
       setMoodcount(moodCount);
     }
@@ -31,10 +31,9 @@ function Mood() {
       setMoodcount(moodCount - 1);
     }
   };
-  
+
   const calculateCursorPosition = () => {
     return `${((moodCount + 10) / 20) * 100}%`;
-
   };
 
   return (

@@ -5,7 +5,13 @@
   width: 100%;
   background-color: #f0f0f0;
 }
+
+.mood-container {
+  width: 80%;
+}
+
 .img-button {
+  width: 100%;
 }
 
 /* Boutons */

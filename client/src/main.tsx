@@ -7,13 +7,12 @@ import { createRoot } from "react-dom/client";
 // Import the main app component
 import App from "./App";
 import UsersProfile from "./pages/UsersProfile/UsersProfile";
-import Mood from "./components/mood/Mood";
+import Mood from "./components/Mood/Mood";
 import Login from "./components/Login/Login";
 import Journal from "./pages/Journal";
 import DailyAct from "./pages/DailyAct/DailyAct";
 import Homepage from "./pages/Homepage/homepage";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
-import Error from "./pages/Error/Error";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Import additional components for new routes
@@ -52,7 +51,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/profile-actions",
+        path: "/profile/actions",
         element: (
           <>
             <DailyAct />
@@ -60,7 +59,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/profile-journal", //
+        path: "/profile/journal", //
         element: (
           <>
             <Journal />
@@ -68,64 +67,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/profile-mood",
-        element: (
-          <>
-            <Mood />
-          </>
-        ),
-      },
-      {
-        path: "/error",
-        element: (
-          <>
-            <Error />
-          </>
-        ),
-      },
-    ],
-  },
-  {
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Homepage />,
-      },
-      {
-        path: "/login",
-        element: (
-          <>
-            <Login />
-          </>
-        ),
-      },
-      {
-        path: "/profile",
-        element: (
-          <>
-            <UsersProfile />
-          </>
-        ),
-      },
-      {
-        path: "/profile-actions",
-        element: (
-          <>
-            <DailyAct />
-          </>
-        ),
-      },
-      {
-        path: "/profile-journal", //
-        element: (
-          <>
-            <Journal />
-          </>
-        ),
-      },
-      {
-        path: "/profile-mood",
+        path: "/profile/mood",
         element: (
           <>
             <Mood />
