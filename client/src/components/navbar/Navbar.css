@@ -7,8 +7,10 @@
   align-items: center;
   justify-content: space-between;
   background-color: beige;
+  width: 100%;
+  height: 10rem;
 }
 
-.about {
-  margin-right: 20%;
+.profile {
+  margin-right: 15%;
 }
