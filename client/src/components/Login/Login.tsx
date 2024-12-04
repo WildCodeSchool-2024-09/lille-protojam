@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
+import { UserContext } from "../../services/UserContext";
 
 function Login() {
 	const [login, setLogin] = useState({ email: "", password: "" });
 	const [errorMessage, setErrorMessage] = useState("");
 	const navigate = useNavigate();
+	const { setIsUSerConnected } = useContext(UserContext);
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
@@ -13,7 +15,8 @@ function Login() {
 			login.email === "legentiltoto@bienveillance.fr" &&
 			login.password === "devenirgentil"
 		) {
-			navigate("/user-profile");
+			setIsUSerConnected(true);
+			navigate("/profile");
 		} else if (login.email !== "legentiltoto@bienveillance.fr") {
 			setErrorMessage("Mauvais email");
 		} else if (login.password !== "devenirgentil") {
