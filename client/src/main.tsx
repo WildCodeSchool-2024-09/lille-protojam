@@ -13,8 +13,6 @@ import Journal from "./pages/Journal";
 import DailyAct from "./pages/DailyAct/DailyAct";
 import Homepage from "./pages/Homepage/homepage";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
-import Error from "./pages/Error/Error";
-import Home from "./pages/Home/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 
