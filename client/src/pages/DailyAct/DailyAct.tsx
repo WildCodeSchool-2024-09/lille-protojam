@@ -1,136 +1,36 @@
 import "./DailyAct.css";
 import { MoodContext } from "../../services/MoodContext.jsx";
 import { useContext, useEffect, useState } from "react";
-function DailyAct() {
-  // RECUPERE LE TABLEAU VIA USE EFFECT OU LOADER
-  const TAB = [
-    {
-      id: 1,
-      humeur: "happy",
-      action: "Proposer à un ami de sortir pour partager cette bonne énergie.",
-    },
-    {
-      id: 2,
-      humeur: "happy",
-      action:
-        "S'offrir un petit plaisir comme un dessert ou une activité favorite.",
-    },
-    {
-      id: 3,
-      humeur: "happy",
-      action: "Faire un compliment sincère à quelqu'un.",
-    },
-    {
-      id: 4,
-      humeur: "happy",
-      action: "Envoyer un message de gratitude à une personne importante.",
-    },
-    {
-      id: 5,
-      humeur: "happy",
-      action: "Faire du bénévolat pour répandre sa joie.",
-    },
-    {
-      id: 6,
-      humeur: "neutral",
-      action: "Prendre un moment pour méditer ou respirer profondément.",
-    },
-    {
-      id: 7,
-      humeur: "neutral",
-      action: "Organiser sa journée ou sa semaine à venir.",
-    },
-    {
-      id: 8,
-      humeur: "neutral",
-      action: "Appeler un proche pour prendre des nouvelles.",
-    },
-    {
-      id: 9,
-      humeur: "neutral",
-      action: "Lire quelques pages d'un livre inspirant ou motivant.",
-    },
-    {
-      id: 10,
-      humeur: "neutral",
-      action:
-        "Faire une promenade en plein air pour se reconnecter avec la nature.",
-    },
-    {
-      id: 11,
-      humeur: "sad",
-      action: "Écrire ses pensées dans un journal pour mieux les comprendre.",
-    },
-    {
-      id: 12,
-      humeur: "sad",
-      action: "Regarder un film ou écouter de la musique qui remonte le moral.",
-    },
-    {
-      id: 13,
-      humeur: "sad",
-      action: "Préparer un repas réconfortant et nutritif.",
-    },
-    {
-      id: 14,
-      humeur: "sad",
-      action: "Demander à un ami de passer du temps ensemble.",
-    },
-    {
-      id: 15,
-      humeur: "sad",
-      action:
-        "Se concentrer sur un petit objectif réalisable pour retrouver un sentiment d'accomplissement.",
-    },
-    {
-      id: 16,
-      humeur: "happy",
-      action:
-        "Donner une bonne pourboire à un serveur ou à quelqu’un qui offre un service.",
-    },
-    {
-      id: 17,
-      humeur: "happy",
-      action:
-        "Partager une bonne nouvelle ou un moment inspirant sur les réseaux sociaux.",
-    },
-    {
-      id: 18,
-      humeur: "neutral",
-      action:
-        "Faire un tri dans ses affaires et donner ce qui n'est plus utilisé.",
-    },
-    {
-      id: 19,
-      humeur: "neutral",
-      action: "Envoyer un courrier ou un email à une vieille connaissance.",
-    },
-    {
-      id: 20,
-      humeur: "sad",
-      action: "Prendre une douche chaude ou un bain pour se détendre.",
-    },
-  ];
+import { useLoaderData } from "react-router-dom";
 
+function DailyAct() {
   const { mood } = useContext(MoodContext);
+  const tab = useLoaderData();
+
+  const [randomTab, setRandomTab] = useState();
+
+  console.log("TAB", tab);
+
+  useEffect(() => {
+    const result = RandomInArray(tab);
+    console.log("result ", result);
+    setRandomTab(result);
+  }, [tab]);
+
   function RandomInArray(array) {
-    const copy = array;
-    const filteredTab = copy.filter((action) => action.humeur === mood);
+    console.log(mood);
+    const filteredTab = array.filter((action) => action.mood === mood);
+    console.log(filteredTab);
     const result = [];
     for (let i = 0; i < 5; i++) {
       const randomIndex = Math.floor(Math.random() * filteredTab.length);
       result.push(filteredTab[randomIndex]);
       filteredTab.splice(randomIndex, 1);
     }
-    console.log(result);
+    console.log("RESULT", result);
     return result;
   }
-  const [randomTab, setRandomTab] = useState([]);
 
-  useEffect(() => {
-    setRandomTab(RandomInArray(TAB));
-  }, []);
-  console.log(mood);
   return (
     <main className="dailyact-main">
       <h1>Réalise une bonne action, pour toi ou ton prochain</h1>
@@ -138,7 +38,7 @@ function DailyAct() {
         {" "}
         <p>{mood}</p>
         {/* FILTRE SELON LE CONTEXTE happy/neutral/TRISTE */}
-        {randomTab.map((action) => (
+        {randomTab?.map((action) => (
           <div key={action.id}>
             <input type="checkbox" id={action.id} name={action.action} />
             <label for={action.id}> {action.action}</label>
