@@ -1,0 +1,112 @@
+.smiley-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Visage et couleurs */
+.face {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  border-radius: 50%;
+  position: relative;
+}
+
+.face-happy {
+  background-color: green;
+}
+
+.face-neutral {
+  background-color: yellow;
+}
+
+.face-sad {
+  background-color: orangered;
+}
+
+/* Position des yeux */
+.eyes {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.eye {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+/* Forme des bouches */
+.mouth {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 80px;
+  height: 40px;
+  border: 3px solid #000;
+  border-top: none;
+  border-radius: 0 0 50px 50px;
+  transform: translateX(-50%);
+}
+
+.mouth-happy {
+  border-top: none;
+  border-radius: 0 0 50px 50px;
+  height: 40px;
+  border-bottom: 3px solid #000;
+}
+
+.mouth-neutral {
+  border-top: none;
+  border-bottom: none;
+  height: 3px;
+  background-color: #000;
+}
+
+.mouth-sad {
+  border-top: 3px solid #000;
+  border-bottom: none;
+  border-radius: 50px 50px 0 0;
+  height: 40px;
+}
+
+/* Boutons */
+.button-face {
+  border: none;
+  cursor: pointer;
+}
+
+.mood-gauge {
+  text-align: center;
+  background-color: violet;
+  border: solid red 5px;
+}
+
+.gradient-bar {
+  position: relative;
+  width: 300px;
+  height: 20px;
+  background: linear-gradient(to right, green, orange);
+  border-radius: 10px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
+
+.cursor {
+  position: absolute;
+  top: -5px;
+  width: 20px;
+  height: 30px;
+  background-color: black; /* Couleur du curseur */
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: left 0.3s ease;
+}
