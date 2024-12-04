@@ -13,22 +13,20 @@ function Mood() {
     setMood("heureux");
   };
 
+  const ScrollToText = () => {
+    const textElement = document.getElementById("target-text");
+    if (textElement) {
+      textElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
-	const ScrollToText = () => {
-		const textElement = document.getElementById("target-text");
-		if (textElement) {
-			textElement.scrollIntoView({ behavior: "smooth", block: "start" });
-		}
-	};
-
-	const handleClickSad = () => {
-		setMoodcount(moodCount + 1);
-		setMood("sad");
-		if (moodCount >= 1) {
-			ScrollToText();
-		}
-	};
-
+  const handleClickSad = () => {
+    setMoodcount(moodCount + 1);
+    setMood("sad");
+    if (moodCount >= 1) {
+      ScrollToText();
+    }
+  };
 
   const handleclickNeutral = () => {
     setMood("neutre");
@@ -143,7 +141,7 @@ function Mood() {
                 href="tel:+33972394050"
                 aria-label="Appelez-nous au +33972394050"
               >
-                09 72 39 40 50
+                <strong>09 72 39 40 50</strong>
               </a>
             </li>
             <li>
@@ -152,12 +150,15 @@ function Mood() {
                 href="tel:+33145394000"
                 aria-label="Appelez-nous au +33145394000"
               >
-                01 45 39 40 00{" "}
+                <strong>01 45 39 40 00 </strong>
               </a>
               (24h/24 et 7j/7)
             </li>
             <li>
-              Numéro national prévention suicide : <a href="te:+3114">3114</a>
+              Numéro national prévention suicide :{" "}
+              <a href="te:+3114">
+                <strong>3114</strong>
+              </a>
             </li>
           </ul>
           Prends soin de toi. Chaque étape compte, et on croit en ta capacité à

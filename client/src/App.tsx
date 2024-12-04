@@ -8,18 +8,16 @@ import {UserProvider} from "./services/UserContext";
 function App() {
   return (
     <>
-     <UserProvider>
-      <MoodProvider>
-        <CounterProvider>
-          <Navbar />
-          <Outlet />
-        </CounterProvider>
-      </MoodProvider>
-     </UserProvider>
-
+      <UserProvider>
+        <MoodProvider>
+          <CounterProvider>
+            <Navbar />
+            <Outlet />
+          </CounterProvider>
+        </MoodProvider>
+      </UserProvider>
     </>
   );
-
 }
 
 export default App;
