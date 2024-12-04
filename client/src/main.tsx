@@ -13,10 +13,9 @@ import Journal from "./pages/Journal";
 import DailyAct from "./pages/DailyAct/DailyAct";
 import Homepage from "./pages/Homepage/homepage";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
-import Error from "./pages/Error/Error";
-import Home from "./pages/Home/Home";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ErrorPage from "./pages/Error/ErrorPage";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -81,13 +80,12 @@ const router = createBrowserRouter([
 				path: "*",
 				element: (
 					<>
-						<PageNotFound />
+						<ErrorPage />
 					</>
 				),
 			},
 		],
 	},
-
 ]);
 
 /* ************************************************************************* */
