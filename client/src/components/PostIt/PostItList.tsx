@@ -11,32 +11,40 @@ function PostItList() {
 			setInputValue("");
 		}
 	};
+
+
+
 	return (
 		<>
-			<div className="input-container">
-				<textarea
-					className="input-postit"
-					value={inputValue}
-					onChange={(e) => setInputValue(e.target.value)}
-					placeholder="Écris ton moment positif ici..."
-					onKeyUp={(e) => {
-						if (e.key === "Enter") handleAddPostIt();
-					}}
-				/>
-				<button
-					id="creaPostIt"
-					className="icon-postit"
-					type="button"
-					onClick={handleAddPostIt}
-				>
-					Ajouter un post-it
-				</button>
-			</div>
-			<form className="post-it-board">
-				{postIts.map((postIt) => (
-					<PostIt key={postIt.id} postIt={postIt} />
-				))}
-			</form>
+			      <div className="input-container">
+                <textarea
+                    className="input-postit"
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
+                    placeholder="Écris ton moment positif ici..."
+                    onKeyUp={(e) => {
+                        if (e.key === "Enter") handleAddPostIt();
+                    }}
+                />
+                <button
+                    id="creaPostIt"
+                    className="icon-postit"
+                    type="button"
+                    onClick={handleAddPostIt}
+                >
+                    Ajouter un post-it
+                </button>
+            </div>
+            <div className="post-it-board">
+                {postIts.map((postIt) => (
+                    <PostIt
+                        key={postIt.id}
+                        postIt={postIt}
+						setPostIt={setPostIts}
+                        
+                    />
+                ))}
+            </div>
 		</>
 	);
 }
