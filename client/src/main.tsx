@@ -11,12 +11,11 @@ import Mood from "./components/Mood/Mood";
 import Login from "./components/Login/Login";
 import Journal from "./pages/Journal";
 import DailyAct from "./pages/DailyAct/DailyAct";
-
 import Homepage from "./pages/Homepage/homepage";
-
 import Error from "./pages/Error/Error";
 import Home from "./pages/Home/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -87,6 +86,7 @@ const router = createBrowserRouter([
 			},
 		],
 	},
+
 ]);
 
 /* ************************************************************************* */
