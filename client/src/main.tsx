@@ -12,7 +12,7 @@ import Login from "./components/Login/Login";
 import Journal from "./pages/Journal";
 import DailyAct from "./pages/DailyAct/DailyAct";
 import Homepage from "./pages/Homepage/homepage";
-import ErrorPage from "./pages/Error/ErrorPage";
+import PageNotFound from "./components/PageNotFound/PageNotFound";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Import additional components for new routes
@@ -75,10 +75,10 @@ const router = createBrowserRouter([
 				),
 			},
 			{
-				path: "/error",
+				path: "*",
 				element: (
 					<>
-						<ErrorPage />
+						<PageNotFound />
 					</>
 				),
 			},
