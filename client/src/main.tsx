@@ -6,12 +6,12 @@ import { createRoot } from "react-dom/client";
 
 // Import the main app component
 import App from "./App";
-import UsersProfile from "./pages/UsersProfile/UsersProfile";
-import Mood from "./components/mood/Mood";
-import Login from "./components/Login/Login";
-import Home from "./pages/Home";
-import Journal from "./pages/Journal";
-import DailyAct from "./pages/DailyAct/DailyAct";
+// import UsersProfile from "./pages/UsersProfile/UsersProfile";
+// import Mood from "./components/mood/Mood";
+// import Login from "./components/Login/Login";
+// import Home from "./pages/Home";
+// import Journal from "./pages/Journal";
+// import DailyAct from "./pages/DailyAct/DailyAct";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
